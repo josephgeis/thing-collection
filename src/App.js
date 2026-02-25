@@ -81,8 +81,6 @@ function AddThingForm({ addThing }) {
 }
 
 function App() {
-  const counterState = useState(0);
-  const [counter, setCounter] = counterState;
   const [things, setThings] = useState([
     {name: "Dog", thing: Dog},
     {name: "Cat", thing: Cat}
