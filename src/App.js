@@ -38,7 +38,7 @@ function Collection({ Thing, number }) {
 
 function ThingDisplay({ name, Thing, startingNumber=3 }) {
   const counterState = useState(startingNumber);
-  const [counter, setCounter] = counterState;
+  const [counter, _] = counterState;
 
   return (
     <div>
