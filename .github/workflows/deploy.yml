@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies and build site
         run: |
           yarn install
-          yarn build
+          PUBLIC_URL="/${{ github.repository }}" yarn build
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
